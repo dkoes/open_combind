@@ -216,7 +216,7 @@ def mol_to_sdf(mol, path_to_sdf):
             with Chem.SDWriter(f) as w:
                 w.write(mol)
     else:
-        with Chem.SDWriter(f) as w:
+        with Chem.SDWriter(path_to_sdf) as w:
             w.write(mol)
 
 
